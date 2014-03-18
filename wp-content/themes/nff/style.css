@@ -1,9 +1,9 @@
 /*
-Theme Name: test
+Theme Name: nff
 Theme URI: http://www.test.no
-Author: juo
-Author URI: http://juo.org/
-Description: The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small.
+Author: De håpefulle
+Author URI: http://wwww.nff.no
+Description: Bachelor oppgave, laget ny nettside til Norsk Finsk Forening
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -39,6 +39,10 @@ header {
     width: 900px;
     height: 50px;
     background: blue;
+    border-top-left-radius:25px; //runder venstre hjørnet slika t kanten blir av rundet//
+    border-top-right-radius:25px; // Runder Høyre hjørnet slik at kanten blir av rundet
+    -moz-border-top-left-radius: 25px; //fikser firefox feil i lesing av border problemet//
+    -moz-border-radius-topleft: 25px; //fikser firefox feil i lesing av border problemet//
 }
 
 footer {
@@ -64,6 +68,8 @@ footer {
 /* Navigation line / meny linje */
 nav{
     background-color: lightblue;
+    font-size: 16px;
+    font-style: normal;
 }
 
 nav ul li {
