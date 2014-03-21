@@ -24,3 +24,5 @@ if (strlen($text) > $length) {
 $text = substr($text,0,strpos($text,' ',$length)) . ' ... <a href="' . get_permalink() . '">[ Les mer ]</a>'; } ;
 return apply_filters('the_excerpt',$text);
 };
+
+add_theme_support( 'menus' );
