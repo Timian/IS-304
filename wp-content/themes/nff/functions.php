@@ -16,3 +16,11 @@ register_sidebar(array(
     'after_widget' => '</div>'
     ));
 
+//gjør slik at kun deler av en lang tekst blir visst. den gir mulighet for lesmer//
+function intro_text($length) {
+global $post;
+$text = get_the_excerpt($post->ID);
+if (strlen($text) > $length) {
+$text = substr($text,0,strpos($text,' ',$length)) . ' ... <a href="' . get_permalink() . '">[ Les mer ]</a>'; } ;
+return apply_filters('the_excerpt',$text);
+};
