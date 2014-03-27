@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25.mar.2014, 11:18:05
+    Author     : juo
+*/
+body{
+    background-color: grey;
+}
+.container{
+    width: 60em;
+    height: 50em;
+    background: white;
+    border: solid red;
+    margin:auto;
+}
+
+.headers {
+  text-align: left;
+  background: white;
+  font-size: 40px;
+  border-bottom: black solid;
+  height:4em;
+  width: 24em;
+} 
+
+.mtext{
+    width: 40em;
+    border: solid green;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.login {
+    width: 10em;
+    float: right;
+    border-left: black solid;
+    height: 10em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+h1 {
+    font-size: 26px;
+}
+h2{
+    font-size: 16px;
+}
+
+h3{
+    font-size: 12px;
+}
+
+.sidebar{
+    width: 13em;
+    border: grey solid;
+    float: right;
+}
+
+.footer{
+    background: black;
+    text-align: center;
+    color: white;
+    width: 60em;
+    height: 2em;
+    position:absolute;
+    bottom: -11em;
+    margin: auto;
+}
+/*Meny*/
+ul
+{
+list-style-type:none;
+margin:0;
+padding:0.5em 0px;
+overflow:hidden;
+border-bottom: darkblue solid;
+}
+li
+{
+float:left;
+}
+a:link,a:visited
+{
+display:inline;
+width:13em;
+font-weight:bold;
+font-size: 16px;
+color:white;
+background-color:blue;
+text-align:center;
+padding:2em;
+text-decoration:none;
+text-transform:uppercase;
+border: white 1px solid;
+}
+a:hover,a:active
+{
+background-color:lightblue;
+color: black;
+}
+ 
+/*about*/
+.picture{
+    height: 6em;
+    width: 200em;
+}
