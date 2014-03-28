@@ -12,7 +12,8 @@ body{
 }
 .container{
     width: 60em;
-    height: 50em;
+    height: auto;
+    min-height: 30em;
     background: white;
     border: solid red;
     margin:auto;
@@ -91,7 +92,7 @@ font-size: 16px;
 color:white;
 background-color:blue;
 text-align:center;
-padding:2em;
+padding:0.5em;
 text-decoration:none;
 text-transform:uppercase;
 border: white 1px solid;
@@ -106,4 +107,17 @@ color: black;
 .picture{
     height: 6em;
     width: 200em;
+}
+
+.rekbar {
+    width: 11em;
+    border: pink solid;
+    float: left;
+    background-color: lightyellow;
+}
+
+textarea{
+    resize: none;
+    width: 20em;
+    height: 6em;
 }
