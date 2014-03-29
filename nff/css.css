@@ -19,9 +19,11 @@ body{
     margin:auto;
 }
 
-.headers {
+.header {
   text-align: left;
-  background: white;
+  background-color: white;
+  background-image: url(img/headerv3text.png);
+  background-repeat: no-repeat;
   font-size: 40px;
   border-bottom: black solid;
   height:4em;
@@ -71,9 +73,9 @@ h3{
     margin: auto;
 }
 /*Meny*/
-ul
+/*ul
 {
-list-style-type:none;
+list-style:none;
 margin:0;
 padding:0.5em 0px;
 overflow:hidden;
@@ -101,8 +103,36 @@ a:hover,a:active
 {
 background-color:lightblue;
 color: black;
+}*/
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
 }
- 
+li{
+   float: left;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding:0.5em 1em 0.5em 1em;
+    font-family: Arial;
+    font-size:10pt; 
+    font-weight:bold; color:#ffffff; 
+    text-transform:uppercase; 
+    border-right:1px solid #607987; 
+    background-color:#7195aa; 
+    text-transform:uppercase; 
+    letter-spacing:.08em
+}
+a:hover{
+    background-color:#3b6a85; 
+    color:#a2becf
+}
+
 /*about*/
 .picture{
     height: 6em;
