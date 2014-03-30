@@ -1,7 +1,7 @@
 /*
 Theme Name: nff
 Theme URI: http://www.test.no
-Author: De håpefulle
+Author: De hï¿½pefulle
 Author URI: http://wwww.nff.no
 Description: Bachelor oppgave, laget ny nettside til Norsk Finsk Forening
 Version: 1.0
@@ -19,35 +19,50 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* struktur*/
 body {
-    background: silver;
+    background: grey;
     font: 16px arial, sans-serif; 
 }
 
 #container {
-    background: #fff;
-    border-top: 14px;
-    overflow: auto;
+    padding: 1em;
+    width: 60em;
+    height: auto;
+    min-height: 30em;
+    background: white;
+    border: solid red;
+    margin:auto;
 }
 
-#container, header, nav, footer{
-    width: 900px;
-    padding: 20px;
+header, nav, footer{
+    width: 60em;
     margin: 0 auto;
 }
 
 header {
-    width: 900px;
-    height: 50px;
-    background: blue;
-    border-top-left-radius:25px; //runder venstre hjørnet slika t kanten blir av rundet//
-    border-top-right-radius:25px; // Runder Høyre hjørnet slik at kanten blir av rundet
-    -moz-border-top-left-radius: 25px; //fikser firefox feil i lesing av border problemet//
-    -moz-border-radius-topleft: 25px; //fikser firefox feil i lesing av border problemet//
+    text-align: left;
+    background-color: white;
+    background-image: url(img/headerv3text.png);
+    background-repeat: no-repeat;
+    font-size: 40px;
+    border-bottom: black solid;
+    height:4em;
+    width: 25em;
+    padding-bottom:0.5em;
+}
+h1{
+    display:none;
+}
+.login {
+    float: right;
+    border-left: black solid;
+    height: 4em;
+    font-size: 12pt;
+
 }
 
 footer {
-    width: 900px;
-    padding: 20px;
+    width: 60em;
+    padding: 1em;
     margin: 0 auto;
     background: #000;
     color: #fff;
@@ -56,7 +71,7 @@ footer {
 
 #left {
     float: left;
-    width: 650px;
+    width: 40em;
     border: 1px solid green;
 }
 
@@ -66,19 +81,33 @@ footer {
     width: 200px;
 }  
 /* Navigation line / meny linje */
-nav{
-    background-color: lightblue;
-    font-size: 16px;
-    font-style: normal;
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+}
+nav li{
+   float: left;
 }
 
-nav ul li {
-    display: inline-block;  
+nav a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding:0.5em 1em 0.5em 1em;
+    font-family: Arial;
+    font-size:15px; 
+    font-weight:bold; color:#ffffff; 
+    text-transform:uppercase; 
+    border-right:1px solid #607987; 
+    background-color:#7195aa; 
+    text-transform:uppercase; 
+    letter-spacing:.08em
 }
-
-nav ul li a {
-    padding: 5px 10px;
-    height: 10px;
+nav a:hover{
+    background-color:#3b6a85; 
+    color:#a2becf
 }
 
 /*text rules*/
