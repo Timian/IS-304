@@ -27,3 +27,7 @@ return apply_filters('the_excerpt',$text);
 };
 
 add_theme_support( 'menus' );
+
+function setWP_Query($args){
+return new WP_Query($args);
+}
