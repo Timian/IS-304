@@ -24,12 +24,21 @@ function load_jquery() {
         <div id='zoom'>
               <a href="javascript:void(0);" onclick="resizeText(1)" id="plustext">ABC</a> | <a href="javascript:void(0);" onclick="resizeText(-1)" id="minustext">abc</a>
         </div>   
+        <div id="languageselection">
+            <a href='index.php/?lang=finsk'><img onclick="setWP_Query('category_name=finsk')" src="<?php bloginfo('template_directory');?>/img/finsmall.png"/> </a>
+            <a href='index.php/?lang=norsk'><img onclick="setWP_Query('category_name=norsk')" src="<?php bloginfo('template_directory');?>/img/norsmall.png" />  </a>          
+        </div>
         <br>
         <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"</h1><?php bloginfo('name')?></a>
+        
+
     </header>
     
     <nav>
-        <?php wp_nav_menu();?>
+        <?php $langvar = $_GET["lang"];?>
+        <?php if ($langvar == NULL){wp_nav_menu(array('menu' => $_COOKIE['langcook'])); } else {wp_nav_menu(array('menu' => $langvar));}?>
+        <?php if ($langvar == 'finsk') {setcookie("langcook" , $langvar , time()+3000 , '/'); } ?>
+        <?php if ($langvar == 'norsk') {setcookie("langcook" , $langvar , time()+3000 , '/'); } ?>
     </nav>
 </html>
 

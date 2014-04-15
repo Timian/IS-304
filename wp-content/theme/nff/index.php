@@ -1,5 +1,6 @@
 <?php get_header()?>
 <?php get_sidebar()?>
+
 <div id="content">
     <?php $langvar = $_GET["lang"]; 
                 $the_query = setWP_Query('category_name='. $langvar);
@@ -11,6 +12,10 @@ if ( $the_query->have_posts() ) {
                 $the_query->the_post();
                 echo '<h3>' . get_the_title().'</h3>';
                 echo '<li>' . intro_text(250) . '</li>';
+                echo the_author_posts_link();
+                echo 'date posted: ';                echo the_date();
+                                echo '<hr><br>';
+                
         }
         echo '</ul>';
 } else {
@@ -18,10 +23,7 @@ if ( $the_query->have_posts() ) {
 }
 ?>
 
-        <div id="languageselection">
-            <a href='index.php/?lang=finsk'><img onclick="setWP_Query('category_name=finsk')" src="<?php bloginfo('template_directory');?>/img/finsmall.png"/> </a>
-            <a href='index.php/?lang=norsk'><img onclick="setWP_Query('category_name=norsk')" src="<?php bloginfo('template_directory');?>/img/norsmall.png" />  </a>          
-        </div>
+
 </div>
 
 

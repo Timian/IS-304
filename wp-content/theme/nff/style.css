@@ -19,23 +19,24 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* struktur*/
 body {
-    background: #303030;
+    background: #000033;
     font-family: arial, helvetica;
     font-size: 16px;
 }
 
 #container {
     padding: 0em;
-    width: 62em;
+    width: 60em;
     height: auto;
     min-height: 30em;
-    background: white;
+    background: #CCFFFF;
     border: solid red;
     margin:auto;
+    overflow: auto;
 }
 
 header, nav, footer{
-    width: 62em;
+    width: 60em;
     margin:auto;
 }
 
@@ -45,7 +46,7 @@ header {
     color:#FFFFFF;
     border-bottom: black solid;
     height:8em;
-    width: 62em;
+    width: 60em;
 }
 
 header h1{
@@ -243,7 +244,16 @@ nav a:hover{
     font-size: 16px;
     float: right;
     margin-bottom:3.5em;
+    margin-right: 1em;
 }
+
+#languageselection{
+    float: right;
+    width: 8em;
+    margin-right: 1em;
+    
+}
+
 
 /*text rules*/
 h1 {font-size: 26px;}
