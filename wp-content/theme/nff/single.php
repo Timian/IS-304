@@ -1,12 +1,13 @@
 <?php get_header()?>
 <?php get_sidebar()?>
-<div id="left">
+
+<div id="content">
     
     <?php while(have_posts()): the_post()?>
-         <h2><?php the_title()?></h2>
+    <h3><?php the_title()?></h3> <br>
          <?php the_content();?>
-    <?php endwhile;?>
-    <?php comments_template('', true);?>
+    <?php endwhile;?><br><br>
+        <?php comments_template('', true);?>
 </div>
 
 

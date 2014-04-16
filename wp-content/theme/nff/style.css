@@ -19,37 +19,45 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 /* struktur*/
 body {
-    background: grey;
+    background: #000033;
     font-family: arial, helvetica;
     font-size: 16px;
 }
 
 #container {
     padding: 0em;
-    width: 63em;
+    width: 60em;
     height: auto;
     min-height: 30em;
-    background: white;
+    background: #CCFFFF;
     border: solid red;
     margin:auto;
+    overflow: auto;
 }
 
 header, nav, footer{
-    width: 62em;
+    width: 60em;
     margin:auto;
-    }
+}
 
 header {
     text-align: left;
-    background-color: white;
-    background-image: url(img/headerv3text.png);
-    background-repeat: no-repeat;
-    font-size: 40px;
+    background-color:#FFFFFF;
+    color:#FFFFFF;
     border-bottom: black solid;
-    height:4em;
-    width: 25em;
-    padding-bottom:0.5em;
+    height:8em;
+    width: 60em;
 }
+
+header h1{
+    font-size: 42px;
+    padding:0em 1em 1em 1em;
+}
+#site-description {
+   font-size: 8px;
+    
+}
+  
 
 .login {
     float: right;
@@ -60,7 +68,7 @@ header {
 }
 
 footer {
-    width: 60em;
+    width: 59em;
     padding: 1em;
     margin: 0 auto;
     background: #000;
@@ -77,16 +85,17 @@ footer {
     background-position: center;
     
 }
-#left {
+#content {
     float: left;
-    width: 45em;
+    width: 40em;
     border: 1px solid green;
     padding: 1em 0em 1em 1em;
 }
+
 /*kontakt skjema*/
 #Contactus{
     float: left;
-    width: 45em;
+    width: 40em;
     border: 1px solid lightseagreen;
     padding: 2em 0em 1em 1em;
 }
@@ -104,17 +113,106 @@ h2 {
 }
 /*sidebaren*/
 #sidebar {
-    border: 1px solid red;
-    float: right;
-    width: 200px;
-}  
-/* Navigation line / meny linje */
+        float:right;
+        z-index: 0;
+        width: 0.5em;
+        padding:3em;
+        background-color:#913420;
+        color:white;
+        font-size:13px;
+        line-height:21px;
+        margin-top:45px; 
+        margin-bottom:45px;
+        position: relative;
+        transition: width 3s;
+        -webkit-transition: width 3s;
+        border-left: 0.5em;
+        border-bottom-left-radius: 2em;
+        border-top-left-radius: 2em;
+        -webkit-border-bottom-left-radius: 2em;
+        -webkit-border-top-left-radius: 2em;
+        -moz-border-bottom-left-radius: 2em;
+        -moz-border-top-left-radius: 2em;
+        }  
+#sidebar:hover{
+    width: 15em;
+    
+}
+
+#sidebarcontent{
+    text-indent: -9999px;
+}
+
+#sidebarcontent:hover{
+    text-indent: 0px;
+}
+
+
+#sidebar h3{
+    text-indent: 0px;
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+}
+
+#sidebar:hover h3{
+    text-indent: 0px;
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    display: none;
+}
+
+#loginbar{
+        float: right;
+        width: 7em;
+        padding:2em;
+        background-color:#913420;
+        color:white;
+        font-size:13px;
+        line-height:15px;
+        z-index: 1;
+        transition: width 3s;
+        -webkit-transition: width 3s;
+        border-left: 0.5em;
+        border-bottom-left-radius: 2em;
+        border-top-left-radius: 2em;
+        -webkit-border-bottom-left-radius: 2em;
+        -webkit-border-top-left-radius: 2em;
+        -moz-border-bottom-left-radius: 2em;
+        -moz-border-top-left-radius: 2em;
+}
+
+#loginbar:hover{
+    width: 15em;
+    
+}
+
+#loginbar h3{
+}
+
+#loginbar:hover h3{
+    text-indent: 0px;
+    display: none;;
+}
+
 nav ul{
     list-style-type: none;
     margin: 0;
     padding:0;
     overflow: hidden;
+    }
+
+nav ul ul{
+    display: none;
 }
+
+nav ul li:hover ul{
+    display: block; 
+    position:absolute;
+    border: 3px solid #3b6a85;
+}
+
 nav li{
    float: left;
 }
@@ -131,12 +229,35 @@ nav a{
     border-right:1px solid #607987; 
     background-color:#7195aa; 
     text-transform:uppercase; 
-    letter-spacing:.08em
+    letter-spacing:.08em;
+    border: 2px solid #3b6a85;
 }
+
 nav a:hover{
     background-color:#3b6a85; 
     color:#a2becf
 }
+
+#zoom{
+    width: 5em;
+    height: 1em;
+    font-size: 16px;
+    float: right;
+    margin-bottom:3.5em;
+    margin-right: 1em;
+}
+
+#languageselection{
+    float: right;
+    width: 8em;
+    margin-right: 1em;
+    
+}
+
+#cookies{
+    float: right;
+}
+
 
 /*text rules*/
 h1 {font-size: 26px;}
