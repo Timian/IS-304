@@ -7,7 +7,11 @@
     <h3><?php the_title()?></h3> <br>
          <?php the_content();?>
     <?php endwhile;?><br><br>
+<<<<<<< HEAD
         <?php comments_template('', true);?>
+=======
+    <?php comments_template('', true);?>
+>>>>>>> a68d8dafdca8595bb28cb963c83ca68c95cbdf67
 </div>
 
 

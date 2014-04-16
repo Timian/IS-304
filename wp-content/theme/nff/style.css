@@ -47,7 +47,20 @@ header {
     border-bottom: black solid;
     height:8em;
     width: 60em;
+<<<<<<< HEAD
 }
+
+header h1{
+    font-size: 42px;
+    padding:0em 1em 1em 1em;
+}
+#site-description {
+   font-size: 8px;
+    
+=======
+>>>>>>> a68d8dafdca8595bb28cb963c83ca68c95cbdf67
+}
+  
 
 header h1{
     font-size: 42px;
@@ -254,10 +267,13 @@ nav a:hover{
     
 }
 
+<<<<<<< HEAD
 #cookies{
     float: right;
 }
 
+=======
+>>>>>>> a68d8dafdca8595bb28cb963c83ca68c95cbdf67
 
 /*text rules*/
 h1 {font-size: 26px;}
