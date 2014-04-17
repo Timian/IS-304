@@ -29,8 +29,9 @@ function load_jquery() {
             <a href='index.php/?lang=norsk'><img onclick="setWP_Query('category_name=norsk')" src="<?php bloginfo('template_directory');?>/img/norsmall.png" />  </a>          
         </div>
         <br>
-        <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"</h1><?php bloginfo('name')?></a>
-        
+        <div id="logoplacement">
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <img src="<?php bloginfo('template_directory');?>/img/logosmall.png"/></a>
+        </div>
 
     </header>
     

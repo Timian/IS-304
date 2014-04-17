@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: contact
+Template Name: kontakt oss 
 */
 ?>
 
@@ -15,7 +15,8 @@ Template Name: contact
         <?php the_content();?>
         
     <?php endwhile;?>
-                            <form>
+        <br>
+                     <form>
                                 Fornavn: <input type="text" name="firstname"><br>
                                 Etternavn: <input type="text" name="lastname"><br>
                                 E-post: <input type="email" name="email"><br>
@@ -23,7 +24,7 @@ Template Name: contact
                                 <input type="submit" value="Send">
                                 <input type="reset" value="Slett innhold">
 
-                            </form>
+                    </form>
 </div>
 
 

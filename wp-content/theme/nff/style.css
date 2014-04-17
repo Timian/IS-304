@@ -44,19 +44,19 @@ header {
     text-align: left;
     background-color:#FFFFFF;
     color:#FFFFFF;
-    border-bottom: black solid;
-    height:8em;
+    height:13.5em;
     width: 60em;
 }
 
-header h1{
+/**header h1{
     font-size: 42px;
     padding:0em 1em 1em 1em;
 }
+
 #site-description {
    font-size: 8px;
     
-}
+}**/
   
 
 .login {
@@ -68,7 +68,7 @@ header h1{
 }
 
 footer {
-    width: 60em;
+    width: 59em;
     padding: 1em;
     margin: 0 auto;
     background: #000;
@@ -90,6 +90,7 @@ footer {
     width: 40em;
     border: 1px solid green;
     padding: 1em 0em 1em 1em;
+    
 }
 
 /*kontakt skjema*/
@@ -164,27 +165,27 @@ h2 {
 }
 
 #loginbar{
-        float: right;
-        width: 7em;
-        padding:2em;
-        background-color:#913420;
-        color:white;
-        font-size:13px;
-        line-height:15px;
-        z-index: 1;
-        transition: width 3s;
-        -webkit-transition: width 3s;
-        border-left: 0.5em;
-        border-bottom-left-radius: 2em;
-        border-top-left-radius: 2em;
-        -webkit-border-bottom-left-radius: 2em;
-        -webkit-border-top-left-radius: 2em;
-        -moz-border-bottom-left-radius: 2em;
-        -moz-border-top-left-radius: 2em;
+   float: right;
+   width: 7em;
+   padding:2em;
+   background-color:#913420;
+   color:white;
+   font-size:13px;
+   line-height:15px;
+   z-index: 1;
+   transition: width 3s;
+   -webkit-transition: width 3s;
+   border-left: 0.5em;
+   border-bottom-left-radius: 2em;
+   border-top-left-radius: 2em;
+   -webkit-border-bottom-left-radius: 2em;
+   -webkit-border-top-left-radius: 2em;
+   -moz-border-bottom-left-radius: 2em;
+   -moz-border-top-left-radius: 2em;
 }
 
 #loginbar:hover{
-    width: 15em;
+    width: 20em;
     
 }
 
@@ -245,6 +246,7 @@ nav a:hover{
     float: right;
     margin-bottom:3.5em;
     margin-right: 1em;
+    font-size: 18px;
 }
 
 #languageselection{
@@ -254,9 +256,39 @@ nav a:hover{
     
 }
 
+#cookies{
+    float: right;
+}
+
+#logoplacement{
+    float: left;
+    height: 13em;
+    width: 13em;
+    position: absolute;
+    }
+    
+/** kontakt oss skjemaet**/    
+.error{
+    padding: 5px 9px;
+    border: 1px solid red;
+    color: red;
+    border-radius: 3px;
+  }
+ 
+.success{
+    padding: 5px 9px;
+    border: 1px solid green;
+    color: green;
+    border-radius: 3px;
+  }
+ 
+form span{
+    color: red;
+  }
+
 
 /*text rules*/
-h1 {font-size: 26px;}
-h2 {font-size: 20px;}
-h3 {font-size: 18px;}
+h1 {font-size: 26px; font-style: normal;}
+h2 {font-size: 20px; font-style: normal;}
+h3 {font-size: 18px; font-style: normal;}
 

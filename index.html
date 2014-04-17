@@ -3,12 +3,79 @@
 <html>
 	<head>
 		<title></title>
+                <style media="screen" type="text/css">
+                    body{
+                        background-color: darkblue;
+                    }
+                    
+                    #maincontent{
+                        font-family: helvetica;
+                        background-color: #F0F8FF;
+                        width: 67em;
+                        height: auto;
+                        margin: auto;
+                        border-bottom-left-radius: 2em;
+                        border-top-left-radius: 2em;
+                        border-top-right-radius: 2em;
+                        border-bottom-right-radius: 2em;
+                            -webkit-border-bottom-left-radius: 2em;
+                            -webkit-border-top-left-radius: 2em;
+                            -webkit-border-bottom-right-radius: 2em;
+                            -webkit-border-top-right-radius: 2em;
+                            -moz-border-bottom-left-radius: 2em;
+                            -moz-border-top-left-radius: 2em;
+                            -moz-border-radius-bottomright: 2em;
+                            -moz-border-top-right-radius: 2em;     
+                    }
+                    #header{
+                        height: 6m;
+                        border-bottom: black solid 5px;  
+                        padding: 1em;
+                        text-align: center;
+                    }
+                    #finsk{
+                        float: right;
+                        padding-top: 5em;
+                        padding-right: 2em;
+                    }
+                    #logonff{
+                        margin-left:auto;
+                        margin-right: auto;
+                        
+                    }
+                    #norsk{
+                        float: left;
+                        padding-top: 5em;
+                        padding-left:2em;
+                    }
+                    #textfield{
+                        font-size: 1em;
+                        text-align: center;
+
+                
+                </style>
 	</head>
 	<body>
-		<h1>It works!</h1>
-		<div id="languageselection">
-            <a href='/wordpress/index.php/?lang=finsk'><img onclick="setWP_Query('category_name=finsk')" src="wordpress\wp-content\themes\nff\img\finsmall.png"/> </a>
-            <a href='/wordpress/index.php/?lang=norsk'><img onclick="setWP_Query('category_name=norsk')" src="wordpress\wp-content\themes\nff\img\norsmall.png"/></a>          
-        </div>
+            <div id="maincontent">
+                <div id="header">
+                    <h1>Velkommen til Norsk Finsk Forening</h1>
+                    <h1>Tervetuloa Norjalais-Suomalaisen Yhdistyksen</h1>
+                    
+                </div>
+                <div id="textfield">
+                    <h2>VELG ØNSKET SPRÅK</h2>
+                    <h2>VALITSE KIELI</h2>
+                </div>
+		<div id="finsk">
+                    <a href='/wordpress/index.php/?lang=finsk'><img onclick="setWP_Query('category_name=finsk')" src="wordpress\wp-content\themes\nff\img\finbig.png"/> </a>
+                </div>
+
+                <div id="norsk">
+                    <a href='/wordpress/index.php/?lang=norsk'><img onclick="setWP_Query('category_name=norsk')" src="wordpress\wp-content\themes\nff\img\norbig.png"/></a>          
+                </div>
+                                <div id="logonff">
+                    <img src="wordpress\wp-content\themes\nff\img\logoed.png">
+                </div>
+           </div>
 	</body>
 </html>

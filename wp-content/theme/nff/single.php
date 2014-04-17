@@ -7,7 +7,7 @@
     <h3><?php the_title()?></h3> <br>
          <?php the_content();?>
     <?php endwhile;?><br><br>
-    <?php comments_template('', true);?>
+        <?php comments_template('', true);?>
 </div>
 
 
