@@ -46,6 +46,7 @@ header {
     color:#FFFFFF;
     height:13.5em;
     width: 60em;
+<<<<<<< HEAD
 }
 
 /**header h1{
@@ -56,7 +57,23 @@ header {
 #site-description {
    font-size: 8px;
     
+<<<<<<< HEAD
 }**/
+=======
+=======
+>>>>>>> a68d8dafdca8595bb28cb963c83ca68c95cbdf67
+}
+  
+
+header h1{
+    font-size: 42px;
+    padding:0em 1em 1em 1em;
+}
+#site-description {
+   font-size: 8px;
+    
+}
+>>>>>>> a53c8d49f2420a80b9a606578ba442162b11b24c
   
 
 .login {
@@ -256,10 +273,15 @@ nav a:hover{
     
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> a53c8d49f2420a80b9a606578ba442162b11b24c
 #cookies{
     float: right;
 }
 
+<<<<<<< HEAD
 #logoplacement{
     float: left;
     height: 13em;
@@ -286,6 +308,10 @@ form span{
     color: red;
   }
 
+=======
+=======
+>>>>>>> a68d8dafdca8595bb28cb963c83ca68c95cbdf67
+>>>>>>> a53c8d49f2420a80b9a606578ba442162b11b24c
 
 /*text rules*/
 h1 {font-size: 26px; font-style: normal;}
