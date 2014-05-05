@@ -33,3 +33,4 @@ function setWP_Query($args){
 return new WP_Query($args);
 }
 
+?>

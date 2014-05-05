@@ -1,5 +1,5 @@
 <!doctype html>
-<?php include 'logintopbar.php'?>
+
 
 <html>
     <head>
@@ -10,7 +10,7 @@
        <?php add_action( 'wp_enqueue_script', 'load_jquery' );
 function load_jquery() {
     wp_enqueue_script( 'jquery' );
-}?> 
+}?>
         <script type="text/javascript">function resizeText(multiplier) {
   if (document.body.style.fontSize === "") {
     document.body.style.fontSize = "1.0em";
@@ -18,29 +18,42 @@ function load_jquery() {
   document.body.style.fontSize = parseFloat(document.body.style.fontSize) + (multiplier * 0.2) + "em";
 }</script>
        <?php wp_head()?>
-    </head>
-    
-    <header>
+    </head>  
+    <header> <!-- Edit the text size on the webpage-->
+		<div id="logincontent">
+			<?php 
+			if (!is_user_logged_in()) {
+				if ($_COOKIE["lang"] == "norsk") {
+					echo "<h3>Logg inn</h3>";
+				}
+				else {
+					echo "<h3>Käyttäjätunnus</h3>";
+				}
+			}
+			?>
+			<?php dynamic_sidebar('first-top-sidebar');?>
+		</div>
         <div id='zoom'>
-              <a href="javascript:void(0);" onclick="resizeText(1)" id="plustext">ABC</a> | <a href="javascript:void(0);" onclick="resizeText(-1)" id="minustext">abc</a>
-        </div>   
+              <a href="javascript:void(0);" onClick="resizeText(1)" id="plustext">ABC</a> | <a href="javascript:void(0);" onClick="resizeText(-1)" id="minustext">abc</a>
+        </div> 
+				<!-- Show the language selection with flags, those flags are linked up to the language they supports-->
         <div id="languageselection">
-            <a href='index.php/?lang=finsk'><img onclick="setWP_Query('category_name=finsk')" src="<?php bloginfo('template_directory');?>/img/finsmall.png"/> </a>
-            <a href='index.php/?lang=norsk'><img onclick="setWP_Query('category_name=norsk')" src="<?php bloginfo('template_directory');?>/img/norsmall.png" />  </a>          
+            <a href='/bachelor/index.php?lang=finsk'><img onClick="setWP_Query('category_name=finsk')" src="<?php bloginfo('template_directory');?>/img/finsmall.png"/> </a>
+            <a href='/bachelor/index.php?lang=norsk'><img onClick="setWP_Query('category_name=norsk')" src="<?php bloginfo('template_directory');?>/img/norsmall.png" />  </a>          
         </div>
         <br>
+				<!--der logoen er, logoen er linket opp mot forsiden-->
         <div id="logoplacement">
-            <a href="<?php echo esc_url( home_url( '/' ) ); ?>"> <img src="<?php bloginfo('template_directory');?>/img/logosmall.png"/></a>
+            <a href="http://tjorhom.org/bachelor/"> <img src="<?php bloginfo('template_directory');?>/img/logosmall.png"/></a>
         </div>
 
     </header>
     
     <nav>
         <?php $langvar = $_GET["lang"];?>
-        <?php if ($langvar == NULL){wp_nav_menu(array('menu' => $_COOKIE['langcook'])); } else {wp_nav_menu(array('menu' => $langvar));}?>
+        <?php if ($langvar === NULL){wp_nav_menu(array('menu' => $_COOKIE['lang'])); } else {wp_nav_menu(array('menu' => $langvar));}?>
         <?php if ($langvar == 'finsk') {setcookie("langcook" , $langvar , time()+3000 , '/'); } ?>
         <?php if ($langvar == 'norsk') {setcookie("langcook" , $langvar , time()+3000 , '/'); } ?>
     </nav>
-</html>
 
 <div id="container">

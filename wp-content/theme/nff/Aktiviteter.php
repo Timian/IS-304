@@ -1,13 +1,12 @@
 <?php
 /*
-Template Name: aboutus
+Template Name: Aktiviteter
 */
 ?>
 
 <?php get_header()?>
 <?php get_sidebar()?>
-<div id="pictureau"></div>
-<div id="left">
+<div id="content">
     
     <?php while(have_posts()): the_post()?>
     
