@@ -2,11 +2,11 @@
 
 <footer>
 
-    <?=date('Y')?> copyright De Håpefulle.                   
+    &copy;<?=date('Y')?> De Håpefulle.                   
 
     <div id="cookies">
 
-        This website is using cookies.
+        <span>Websiden bruker cookies</span>
 
     </div>
 

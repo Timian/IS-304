@@ -7,11 +7,11 @@
 	}
 	else if(isSet($_SESSION['lang']))
 	{
-	$_SESSION['lang'] = $lang;
+		$_SESSION['lang'] = $lang;
 	}
 	else if(isSet($_COOKIE['lang']))
 	{
-	$lang = $_COOKIE['lang'];
+		$lang = $_COOKIE['lang'];
 	}
 	else {
 		header('Location: ./lang.html');
@@ -42,7 +42,7 @@ if ( $the_query->have_posts() ) {
 
                 $the_query->the_post();
 
-                echo "<h3> <a href='" . get_permalink() . "'>" . get_the_title(). "</a> </h3>";
+                echo "<h3> <a href='" . get_permalink() . "'>" . get_the_title(). "</a> </h3> <br />";
 
                 echo '<li>' . intro_text(250) . '</li>';
 

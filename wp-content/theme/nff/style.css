@@ -22,7 +22,7 @@ body {
 	margin-left: auto;
     margin-right: auto;
     background: #white;
-    font-family: arial, helvetica;
+	font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 /*Hele midt siden (ikke header og footer, men det imellom)*/
@@ -69,15 +69,7 @@ header h1{
    font-size: 8px;
     
 }
-  
 
-/*.login {
-    float: right;
-    border-left: 0.2em  black solid;
-    border-bottom: 0.2em  black solid;
-    /* height: 5em; */
-    /*font-size: 12pt;
-}*/
 /*footer*/
 footer {
     width: 59em;
@@ -105,6 +97,15 @@ footer {
     
 }
 
+#content a.hover {
+	text-decoration:none;
+	color:black;
+}
+
+#content a.visited {
+	text-decoration:none;
+	color:black;
+}
 /*kontakt skjema*/
 #Contactus{
     float: left;
@@ -170,6 +171,7 @@ h2 {
 
 
 #sidebar h3{
+	font-family:arial, sans-serif;
     text-indent: 0px;
     transform:rotate(90deg);
     -webkit-transform:rotate(90deg);
@@ -183,73 +185,22 @@ h2 {
     -ms-transform:rotate(0deg);
     display: none;
 }
-/*
- #loginbar{
-   position:relative;
-   min-height: 19em;
-   float: right;
-   width:6em;
-   overflow: hidden;
-   background-color:#913420;
-   color:white;
-   font-size:12px;
-   line-height:10px;
-   z-index: 0;
-	 text-indent: -9999px;
-   transition: width 2s;
-   -webkit-transition: width 2s;
-   border-left: 0.5em;
-   border-bottom-left-radius: 2em;
-   border-top-left-radius: 2em;
-   -webkit-border-bottom-left-radius: 2em;
-   -webkit-border-top-left-radius: 2em;
-   -moz-border-bottom-left-radius: 2em;
-   -moz-border-top-left-radius: 2em;
-} 
 
-#loginbar:hover{
-    width: 15em;
-		height:auto;
-		
-
-}
-
-#loginbar h4{
-    text-indent: 0px;
-    transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
-    -ms-transform:rotate(90deg); 
-		display:block;
-}
-
-#loginbar:hover h4{
-    text-indent: 0px;
-    transform:rotate(0deg);
-    -webkit-transform:rotate(0deg);
-    -ms-transform:rotate(0deg);
-    display: block;
-}
-*/
 #logincontent{
-		float:right;
-		position:relative;
-		display:block;
-		max-width:15em;
-		height:13em;
-		border-left: solid black 0.1em;
-		padding-left: 0.5em;
-		padding-right: 0.5em;
-		padding-top: 0.5em;
-		margin-left:auto;
-		margin-right:auto;
-		vertical-align:text-top;
+	float:right;
+	position:relative;
+	display:block;
+	max-width:15em;
+	height:13em;
+	border-left: solid black 0.1em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0.5em;
+	margin-left:auto;
+	margin-right:auto;
+	vertical-align:text-top;
 }
 
-/*#logincontent:hover{
-		text-indent: 0px;
-		padding:1em 5em 1em 1em;
-}
-*/
 nav ul{
     list-style-type: none;
     margin: 0;
@@ -341,8 +292,8 @@ form span{
 
 
 /*text rules*/
-h1 {font-size: 26px; font-style: normal;}
-h2 {font-size: 20px; font-style: normal;}
-h3 {font-size: 18px; font-style: normal;}
-h4 {font-size: 14px; font-style: normal;}
+h1 {font-size: 26px; font-style: open-sans;}
+h2 {font-size: 20px; font-style: open-sans;}
+h3 {font-size: 18px; font-style: open-sans;}
+h4 {font-size: 14px; font-style: open-sans;}
 

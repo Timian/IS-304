@@ -1,6 +1,6 @@
 <div id="sidebar">
     
-    <h3> sidebar </h3>
+    <h3> Sidebar </h3>
     
     
         <div id="sidebarcontent">
