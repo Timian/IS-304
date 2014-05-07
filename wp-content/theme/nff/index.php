@@ -26,7 +26,7 @@
 
 
 <div id="content">
-
+<div id="textcontent">
     <?php $langvar = $_GET["lang"]; 
 
                 $the_query = setWP_Query('category_name='. $langvar);
@@ -70,17 +70,8 @@ if ( $the_query->have_posts() ) {
 
 ?>
 
-
-
-
-
 </div>
-
-
-
-
-
-
+</div>
 
 <?php get_footer()?>
 

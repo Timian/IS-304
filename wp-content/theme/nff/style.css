@@ -21,7 +21,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body {
 	margin-left: auto;
     margin-right: auto;
-    background: #white;
+    background: white;
 	font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
@@ -31,21 +31,59 @@ body {
     margin-right: auto;
     display: block;
     padding: 0em;
-    width: 60em;
-    height: auto;
-    min-height: 30em;
-	background:#EFF8FB;
+    width: 70em;
+    height:auto;
+	background:#DCF0F7;
     /*background: #DCF0F7;*/
-    border: solid red;	
+    border-left: solid red;	
+	border-left-width:0.2em;
     overflow: auto;
 	z-index:2;
 	/*box-shadow: 10px 10px 5px #888888;*/
 }
 /* justere bredden og marginen på hedaer, nav(menyen) og footer */
 header, nav, footer{
-    width: 60em;
+    width: 70em;
     margin:auto;
-	
+}
+
+#comments {
+	background-color:gainsboro;
+	max-width:40em;
+	margin-right:auto;
+	padding-left:1em;
+	padding-top:1em;
+	padding-bottom:1em;
+	border:solid black 0.1em;
+}
+
+.comment {
+	padding:1em;
+	list-style-type:none;
+	border-bottom:solid black 0.1em;
+	border-left:solid black 0.1em;
+}
+
+.comment-meta {
+	margin-bottom:1em;
+}
+
+.reply {
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+.logged-in-as {
+	padding-bottom:1em;
+}
+
+label {
+	float:left;
+	clear:both;
+}
+
+.form-allowed-tags {
+	text-indent:-9999px;
 }
 
 header, nav, footer, #container {
@@ -57,7 +95,9 @@ header {
     background-color:#DCF0F7;
     color:black;
     height:13.5em;
-    width: 60em;
+    width: 70em;
+    border-left: solid red;	
+	border-left-width:0.2em;
 }
 
 header h1{
@@ -72,7 +112,7 @@ header h1{
 
 /*footer*/
 footer {
-    width: 59em;
+    width: 69em;
     padding: 1em;
     margin: 0 auto;
     background: #000;
@@ -91,8 +131,11 @@ footer {
 }
 #content {
     float: left;
-    width: 40em;
-    border: 1px solid green;
+    width: 50em;
+	min-height:39em;
+	background-color:#EFF8FB;
+    border-right: solid black 0.1em;
+	/*border-bottom: solid green 0.1em;*/
     padding: 1em 0em 1em 1em;
     
 }
@@ -105,6 +148,11 @@ footer {
 #content a.visited {
 	text-decoration:none;
 	color:black;
+}
+
+#textcontent {
+	width:45em;
+	padding-left:1em;
 }
 /*kontakt skjema*/
 #Contactus{
@@ -201,6 +249,14 @@ h2 {
 	vertical-align:text-top;
 }
 
+nav {
+	width:70em;
+	background-color:lightblue;
+	border-top:solid black 0.1em;
+	border-bottom:solid black 0.1em;
+    border-left: solid red;	
+	border-left-width:0.2em;
+}
 nav ul{
     list-style-type: none;
     margin: 0;
