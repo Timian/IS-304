@@ -2,7 +2,7 @@
 
 <footer>
 
-    &copy;<?=date('Y')?> De Håpefulle.                   
+    <span>&copy;<?=date('Y')?> Norsk-Finsk forening</span>
 
     <div id="cookies">
 
