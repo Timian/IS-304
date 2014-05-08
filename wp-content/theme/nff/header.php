@@ -1,3 +1,4 @@
+
 <!doctype html>
 
 
@@ -20,6 +21,7 @@ function load_jquery() {
 }</script>
        <?php wp_head()?>
     </head>  
+    <div id="all">
     <header> <!-- Edit the text size on the webpage-->
 		<div id="logincontent">
 			<?php 
@@ -56,7 +58,7 @@ function load_jquery() {
         <br>
 				<!--der logoen er, logoen er linket opp mot forsiden-->
         <div id="logoplacement">
-            <a href="http://tjorhom.org/bachelor/?lang=<?php 	if (!empty($logginnvar)) {
+            <a href="/bachelor/?lang=<?php 	if (!empty($logginnvar)) {
 																	if ($logginnvar=="norsk") {
 																		echo "norsk";
 																	}
@@ -79,8 +81,10 @@ function load_jquery() {
     <nav>
         <?php $langvar = $_GET["lang"];?>
         <?php if ($langvar === NULL){wp_nav_menu(array('menu' => $_COOKIE['lang']));} else {wp_nav_menu(array('menu' => $langvar));}?>
-        <?php if ($langvar == 'finsk') {setcookie("langcook" , $langvar , time()+3000 , '/'); $logginn="Käyttäjätunnus";} ?>
-        <?php if ($langvar == 'norsk') {setcookie("langcook" , $langvar , time()+3000 , '/'); $logginn="Logg inn";} ?>
+        <?php if ($langvar == 'finsk') {setcookie("langcook" , $langvar , time()+3000 , '/');} ?>
+        <?php if ($langvar == 'norsk') {setcookie("langcook" , $langvar , time()+3000 , '/');} ?>
     </nav>
 
 <div id="container">
+<?php echo "Get er " . $_GET["lang"] . "<br />";?>
+<?php echo "Cookie er " . $_COOKIE["lang"] . "<br />";?>

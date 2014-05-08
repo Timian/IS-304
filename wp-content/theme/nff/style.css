@@ -18,6 +18,16 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 
 /* struktur*/
+/*Lage ytterboks-kun for skyggelegging*/
+#all {
+	width:70em;
+	margin-left:auto;
+	margin-right:auto;
+	box-shadow:2px 2px 10px 10px #888888;
+ 	-webkit-box-shadow:2px 2px 10px 10px #C9C9C9;
+	 -moz-box-shadow:2px 2px 10px 10px #C9C9C9;
+}
+/*Resten av body*/
 body {
 	margin-left: auto;
     margin-right: auto;
@@ -25,237 +35,31 @@ body {
 	font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
-/*Hele midt siden (ikke header og footer, men det imellom)*/
-#container {
-	margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 0em;
-    width: 70em;
-    height:auto;
-	background:#DCF0F7;
-    /*background: #DCF0F7;*/
-    border-left: solid red;	
-	border-left-width:0.2em;
-    overflow: auto;
-	z-index:2;
-	/*box-shadow: 10px 10px 5px #888888;*/
-}
-/* justere bredden og marginen på hedaer, nav(menyen) og footer */
-header, nav, footer{
-    width: 70em;
-    margin:auto;
-}
-
-#comments {
-	background-color:gainsboro;
-	max-width:40em;
-	margin-right:auto;
-	padding-left:1em;
-	padding-top:1em;
-	padding-bottom:1em;
-	border:solid black 0.1em;
-}
-
-.comment {
-	padding:1em;
-	list-style-type:none;
-	border-bottom:solid black 0.1em;
-	border-left:solid black 0.1em;
-}
-
-.comment-meta {
-	margin-bottom:1em;
-}
-
-.reply {
-	margin-top:1em;
-	margin-bottom:1em;
-}
-
-.logged-in-as {
-	padding-bottom:1em;
-}
-
-label {
-	float:left;
-	clear:both;
-}
-
-.form-allowed-tags {
-	text-indent:-9999px;
-}
-
-header, nav, footer, #container {
-	box-shadow: 10px 10px 5px #888888;
-}
-/*Header*/
+/*Header, og det som hører med den*/
 header {
     text-align: left;
-    background-color:#DCF0F7;
+    /*background-color:#DCF0F7;*/
     color:black;
     height:13.5em;
     width: 70em;
-    border-left: solid red;	
-	border-left-width:0.2em;
+    /*border-left: solid black;	
+	border-left-width:0.1em;*/
 }
 
 header h1{
     font-size: 42px;
     padding:0em 1em 1em 1em;
 }
+/*Slutt på header*/
 
-#site-description {
-   font-size: 8px;
-    
-}
-
-/*footer*/
-footer {
-    width: 69em;
-    padding: 1em;
-    margin: 0 auto;
-    background: #000;
-    color: #fff;
-    border-bottom: 14px;
-}
-/*om oss bilde, den bruker left for plassering av tekst*/
-#pictureau {
-    width: 46.1em;
-    height: 6.5em;
-    background-color: #497FBF;
-    background-image: url(img/omoss.PNG);
-    background-repeat: no-repeat;
-    background-position: center;
-    
-}
-#content {
-    float: left;
-    width: 50em;
-	min-height:39em;
-	background-color:#EFF8FB;
-    border-right: solid black 0.1em;
-	/*border-bottom: solid green 0.1em;*/
-    padding: 1em 0em 1em 1em;
-    
-}
-
-#content a.hover {
-	text-decoration:none;
-	color:black;
-}
-
-#content a.visited {
-	text-decoration:none;
-	color:black;
-}
-
-#textcontent {
-	width:45em;
-	padding-left:1em;
-}
-/*kontakt skjema*/
-#Contactus{
-    float: left;
-    width: 40em;
-    border: 1px solid lightseagreen;
-    padding: 2em 0em 1em 1em;
-}
-
-h2 {
-    display: none;
-}
-#picturecon {
-    width: 46.1em;
-    height: 6.5em;
-    background-color: #497FBF;
-    background-image: url(img/kontaktossy.PNG);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-/*sidebaren*/
-#sidebar {
-        float:right;
-		overflow:hidden;
-		z-index: 1;
-        width: 0.5em;
-        padding:3em;
-        background-color:#913420;
-        color:white;
-        font-size:13px;
-        line-height:21px;
-        margin-top:45px; 
-        margin-bottom:45px;
-        position: relative;
-        transition: width 1s;
-        -webkit-transition: width 1s;
-        border-left: 0.5em;
-        border-bottom-left-radius: 2em;
-        border-top-left-radius: 2em;
-        -webkit-border-bottom-left-radius: 2em;
-        -webkit-border-top-left-radius: 2em;
-        -moz-border-bottom-left-radius: 2em;
-        -moz-border-top-left-radius: 2em;
-        }  
-#sidebar a:link {
-		color:white;
-	}
-
-#sidebar a:visited {
-		color:white;
-	}
-#sidebar:hover{
-    width: 15em;
-    
-}
-
-#sidebarcontent{
-    text-indent: -9999px;
-}
-
-#sidebarcontent:hover{
-    text-indent: 0px;
-}
-
-
-#sidebar h3{
-	font-family:arial, sans-serif;
-    text-indent: 0px;
-    transform:rotate(90deg);
-    -webkit-transform:rotate(90deg);
-    -ms-transform:rotate(90deg);
-}
-
-#sidebar:hover h3{
-    text-indent: 0px;
-    transform:rotate(0deg);
-    -webkit-transform:rotate(0deg);
-    -ms-transform:rotate(0deg);
-    display: none;
-}
-
-#logincontent{
-	float:right;
-	position:relative;
-	display:block;
-	max-width:15em;
-	height:13em;
-	border-left: solid black 0.1em;
-	padding-left: 0.5em;
-	padding-right: 0.5em;
-	padding-top: 0.5em;
-	margin-left:auto;
-	margin-right:auto;
-	vertical-align:text-top;
-}
-
+/*Menybaren*/
 nav {
 	width:70em;
-	background-color:lightblue;
+	/*background-color:lightblue;*/
 	border-top:solid black 0.1em;
 	border-bottom:solid black 0.1em;
-    border-left: solid red;	
-	border-left-width:0.2em;
+    /*border-left: solid red;	
+	border-left-width:0.2em;*/
 }
 nav ul{
     list-style-type: none;
@@ -297,6 +101,215 @@ nav a{
 nav a:hover{
     background-color:#3b6a85; 
     color:#a2becf
+}
+/*Slutt på meny*/
+
+/*Innholdet ligger i containeren*/
+#container {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 0em;
+    width: 70em;
+    height:auto;
+	/*background:#DCF0F7;*/
+    /*background: #DCF0F7;*/
+    /*border-left: solid red;	
+	border-left-width:0.2em;*/
+    overflow: auto;
+	z-index:2;
+	/*box-shadow: 10px 10px 5px #888888;*/
+}
+/* ... og selve innholdet må også styles*/
+#content {
+    float: left;
+    width: 50em;
+	min-height:39em;
+	/*background-color:#EFF8FB;*/
+    /*border-right: solid black 0.1em;*/
+	/*border-bottom: solid green 0.1em;*/
+    padding: 1em 0em 1em 1em;
+    
+}
+
+#content a.hover {
+	text-decoration:none;
+	color:black;
+}
+
+#content a.visited {
+	text-decoration:none;
+	color:black;
+}
+
+#textcontent {
+	width:45em;
+	padding-left:1em;
+}
+/*Slutt på innhold*/
+
+/*Sidebaren*/
+#sidebar {
+        float:right;
+		overflow:hidden;
+		z-index: 1;
+        width: 0.5em;
+        padding:3em;
+        background-color:#913420;
+        color:white;
+        font-size:13px;
+        line-height:21px;
+        margin-top:45px; 
+        margin-bottom:45px;
+        position: relative;
+        transition: width 1s;
+        -webkit-transition: width 1s;
+        border-left: 0.5em;
+        border-bottom-left-radius: 2em;
+        border-top-left-radius: 2em;
+        -webkit-border-bottom-left-radius: 2em;
+        -webkit-border-top-left-radius: 2em;
+        -moz-border-bottom-left-radius: 2em;
+        -moz-border-top-left-radius: 2em;
+        }  
+		
+#sidebar a:link {
+		color:white;
+}
+
+#sidebar a:visited {
+		color:white;
+}
+#sidebar:hover{
+    width: 15em;    
+}
+
+#sidebarcontent{
+    text-indent: -9999px;
+}
+
+#sidebarcontent:hover{
+    text-indent: 0px;
+}
+
+#sidebar h3{
+	font-family:arial, sans-serif;
+    text-indent: 0px;
+    transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+}
+
+#sidebar:hover h3{
+    text-indent: 0px;
+    transform:rotate(0deg);
+    -webkit-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    display: none;
+}
+/*Slutt på sidebar*/
+/* Justere bredden og marginen på hedaer, nav(menyen) og footer */
+header, nav, footer{
+    width: 70em;
+    margin:auto;
+}
+/*Kommentarene, og alt det som hører med de*/
+#comments {
+	background-color:gainsboro;
+	max-width:40em;
+	margin-right:auto;
+	padding-left:1em;
+	padding-top:1em;
+	padding-bottom:1em;
+	border:solid black 0.1em;
+}
+
+.comment {
+	padding:1em;
+	list-style-type:none;
+	border-bottom:solid black 0.1em;
+	border-left:solid black 0.1em;
+}
+
+.comment-meta {
+	margin-bottom:1em;
+}
+
+.reply {
+	margin-top:1em;
+	margin-bottom:1em;
+}
+
+.logged-in-as {
+	padding-bottom:1em;
+}
+
+label {
+	float:left;
+	clear:both;
+}
+
+.form-allowed-tags {
+	text-indent:-9999px;
+}
+/*Slutt på kommentarseksjon*/
+
+#site-description {
+   font-size: 8px;
+    
+}
+
+/*footer*/
+footer {
+    width: 69em;
+    padding: 1em;
+    margin: 0 auto;
+    background: #000;
+    color: #fff;
+    border-bottom: 14px;
+}
+/*om oss bilde, den bruker left for plassering av tekst*/
+#pictureau {
+    width: 46.1em;
+    height: 6.5em;
+    background-color: #497FBF;
+    background-image: url(img/omoss.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/*kontakt skjema*/
+#Contactus{
+    float: left;
+    width: 40em;
+    border: 1px solid lightseagreen;
+    padding: 2em 0em 1em 1em;
+}
+
+#picturecon {
+    width: 46.1em;
+    height: 6.5em;
+    background-color: #497FBF;
+    background-image: url(img/kontaktossy.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#logincontent{
+	float:right;
+	position:relative;
+	display:block;
+	max-width:15em;
+	height:13em;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0.5em;
+	margin-left:auto;
+	margin-right:auto;
+	vertical-align:text-top;
+}
+#logincontent .widgettitle {
+    text-indent:-9999px;
 }
 
 #zoom{

@@ -1,7 +1,7 @@
 <hr />
 <br />
 <div id="comments">
-	<h3>Kommentarer</h3>
+	<h2>Kommentarer</h2>
     <br />
     <?php wp_list_comments();?>
 	
