@@ -26,6 +26,9 @@
 
 
 <div id="content">
+
+<?php echo do_shortcode ('[tribulant_slideshow gallery_id="1"]') ?>
+
 <div id="textcontent">
     <?php $langvar = $_GET["lang"]; 
 

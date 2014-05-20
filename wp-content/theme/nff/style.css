@@ -55,15 +55,15 @@ header h1{
 /*Menybaren*/
 nav {
 	width:70em;
-	/*background-color:lightblue;*/
+	/*background-color:black;
 	border-top:solid black 0.1em;
 	border-bottom:solid black 0.1em;
-    /*border-left: solid red;	
+       border-left: solid red;	
 	border-left-width:0.2em;*/
 }
 nav ul{
     list-style-type: none;
-    margin: 0;
+    margin-left: 1em;
     padding:0;
     overflow: hidden;
     }
@@ -75,7 +75,7 @@ nav ul ul{
 nav ul li:hover ul{
     display: block; 
     position:absolute;
-    border: 3px solid #3b6a85;
+    /*border: 3px solid #3b6a85;*/
 }
 
 nav li{
@@ -86,21 +86,17 @@ nav a{
     display: block;
     text-decoration: none;
     text-align: center;
-    padding:0.5em 1em 0.5em 1em;
+    padding:1em 1em 0.5em 1em;
     font-family: Arial;
-    font-size:15px; 
-    font-weight:bold; color:#ffffff; 
-    text-transform:uppercase; 
-    border-right:1px solid #607987; 
-    background-color:#7195aa; 
-    text-transform:uppercase; 
+    font-size:15px;
+    /*font-color:#0C090A;*/ 
+    font-weight:bold; color:#0C090A; 
+    text-transform:uppercase;  
     letter-spacing:.08em;
-    border: 2px solid #3b6a85;
 }
 
 nav a:hover{
-    background-color:#3b6a85; 
-    color:#a2becf
+	color: blue;
 }
 /*Slutt på meny*/
 
@@ -108,10 +104,12 @@ nav a:hover{
 #container {
 	margin-left: auto;
     margin-right: auto;
+    margin-top: 3em;
     display: block;
     padding: 0em;
     width: 70em;
     height:auto;
+    color: black;
 	/*background:#DCF0F7;*/
     /*background: #DCF0F7;*/
     /*border-left: solid red;	
@@ -124,6 +122,7 @@ nav a:hover{
 #content {
     float: left;
     width: 50em;
+    color; black;
 	min-height:39em;
 	/*background-color:#EFF8FB;*/
     /*border-right: solid black 0.1em;*/
@@ -145,6 +144,7 @@ nav a:hover{
 #textcontent {
 	width:45em;
 	padding-left:1em;
+       color: black;
 }
 /*Slutt på innhold*/
 
@@ -174,11 +174,11 @@ nav a:hover{
         }  
 		
 #sidebar a:link {
-		color:white;
+		color:black;
 }
 
 #sidebar a:visited {
-		color:white;
+		color:black;
 }
 #sidebar:hover{
     width: 15em;    
@@ -259,14 +259,21 @@ label {
     
 }
 
+
+#content{
+
+}
+
+
+
 /*footer*/
 footer {
-    width: 69em;
+    width: 60em;
     padding: 1em;
     margin: 0 auto;
-    background: #000;
-    color: #fff;
-    border-bottom: 14px;
+    background: none;
+    color: black;
+    /*border-bottom: 14px;*/
 }
 /*om oss bilde, den bruker left for plassering av tekst*/
 #pictureau {

@@ -86,5 +86,3 @@ function load_jquery() {
     </nav>
 
 <div id="container">
-<?php echo "Get er " . $_GET["lang"] . "<br />";?>
-<?php echo "Cookie er " . $_COOKIE["lang"] . "<br />";?>
