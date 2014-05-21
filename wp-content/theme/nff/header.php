@@ -22,6 +22,7 @@ function load_jquery() {
        <?php wp_head()?>
     </head>  
     <div id="all">
+
     <header> <!-- Edit the text size on the webpage-->
 		<div id="logincontent">
 			<?php 
@@ -45,9 +46,11 @@ function load_jquery() {
 				}
 			}
 			?>
+
 			<?php dynamic_sidebar('first-top-sidebar');?>
-		</div>
-        <div id='zoom'>
+			</div>
+        
+	<div id='zoom'>
               <a href="javascript:void(0);" onClick="resizeText(1)" id="plustext">ABC</a> | <a href="javascript:void(0);" onClick="resizeText(-1)" id="minustext">abc</a>
         </div> 
 				<!-- Show the language selection with flags, those flags are linked up to the language they supports-->

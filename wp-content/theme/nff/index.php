@@ -38,7 +38,7 @@
 
 // The Loop denne henter frem poster som er lagt ut//
 
-if ( $the_query->have_posts() ) {
+/**if ( $the_query->have_posts() ) {
         echo '<ul>';
 
         while ( $the_query->have_posts() ) {
@@ -70,7 +70,7 @@ if ( $the_query->have_posts() ) {
         // no posts found
 
 }
-
+**/
 ?>
 
 </div>

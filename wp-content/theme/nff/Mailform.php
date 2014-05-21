@@ -4,13 +4,13 @@
 
 
 
-$to = "stian-u@hotmail.com";
+$to = "jarle@tjorhom.org";
 
-$subject = "Kontaktskjema fra:" . ' ' . $_REQUEST['name'];
+$subject = "Kontaktskjema fra:" . ' ' . $_POST['name'];
 
-$message = $_REQUEST['message'] ;
+$message = $_POST['message'] ;
 
-$from = $_REQUEST['email'] ;
+$from = $_POST['email'] ;
 
 $headers = "From:" . $from;
 
@@ -22,14 +22,15 @@ $headers = "From:" . $from;
 
 
 
-@sent ("$to", "$subject", "$message", "$headers");
+mail($to, $subject, $message, $headers);
 
 ?>
 
 
 
-//echo "Din mail har blitt sendt. Du vil bli vil få tilbakemelding innen kort tid."
+<p>Din mail har blitt sendt. Du vil få tilbakemelding innen kort tid.</p>
 
+<p><a href="http://tjorhom.org/bachelor">Gå til forsiden</a></p>
 
 
 

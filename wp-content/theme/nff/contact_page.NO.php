@@ -34,7 +34,7 @@ Template Name: Kontakt Oss (norsk)
 
         <br>
 
-                     <form id="mailform" method="get" action='...\mailform.php' enctype="multipart/form-data">
+                     <form id="mailform" method="post" action='<?php bloginfo('template_directory'); ?>/Mailform.php' enctype="multipart/form-data">
 
   
 
